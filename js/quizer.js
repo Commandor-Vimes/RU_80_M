@@ -340,28 +340,357 @@ function load(){
 	setup();
 }
 
-// EN songs
+// RU songs
+const ru_1980_m_icon = [
+	'easy',
+	'medium'
+];
 
+const RU_1980_M_PACK_1 = 1;
+const RU_1980_M_PACK_2 = 2;
+
+let ru_1980_m = [
+	{
+		pack : RU_1980_M_PACK_1,
+		group : 'Виктор Салтыков',
+		song : "Белая ночь"
+	},
+	{
+		pack : RU_1980_M_PACK_1,
+		group : 'Игорь Корнелюк',
+		song : "Билет на балет"
+	},
+	{
+		pack : RU_1980_M_PACK_1,
+		group : 'Игорь Корнелюк',
+		song : "Возвращайся"
+	},
+	{
+		pack : RU_1980_M_PACK_2,
+		group : 'Вячеслав Добрынин',
+		song : "Не сыпь мне соль на рану"
+	},
+	{
+		pack : RU_1980_M_PACK_1,
+		group : 'Юрий Лоза',
+		song : "Плот"
+	},
+	{
+		pack : RU_1980_M_PACK_2,
+		group : 'Александр Барыкин',
+		song : "Букет"
+	},
+	{
+		pack : RU_1980_M_PACK_1,
+		group : 'Владимир Кузьмин',
+		song : "Пристань твоей надежды"
+	},
+	{
+		pack : RU_1980_M_PACK_2,
+		group : 'Владимир Маркин',
+		song : "Сиреневый туман"
+	},
+	{
+		pack : RU_1980_M_PACK_2,
+		group : 'Владимир Маркин',
+		song : "Я готов целовать песок",
+		ignore : true
+	},
+	{
+		pack : RU_1980_M_PACK_1,
+		group : 'Игорь Николаев',
+		song : "Королевство кривых зеркал"
+	},
+	{
+		pack : RU_1980_M_PACK_1,
+		group : 'Юрий Антонов',
+		song : "На улице Каштановой"
+	},
+	{
+		pack : RU_1980_M_PACK_1,
+		group : 'Игорь Тальков',
+		song : "Чистые пруды"
+	},
+	{
+		pack : RU_1980_M_PACK_1,
+		group : 'Игорь Скляр',
+		song : "Комарово"
+	},
+	{
+		pack : RU_1980_M_PACK_2,
+		group : 'Тынис Мяги',
+		song : "Я не умею танцевать"
+	},
+	{
+		pack : RU_1980_M_PACK_2,
+		group : 'Сергей Рогожин',
+		song : "На соседней улице"
+	},
+	{
+		pack : RU_1980_M_PACK_1,
+		group : 'Юрий Антонов',
+		song : "Анастасия"
+	},
+	{
+		pack : RU_1980_M_PACK_1,
+		group : 'Михаил Боярский',
+		song : "Сивка-Бурка"
+	},
+	{
+		pack : RU_1980_M_PACK_1,
+		group : 'Ярослав Евдокимов',
+		song : "Фантазёр"
+	},
+	{
+		pack : RU_1980_M_PACK_1,
+		group : 'Ярослав Евдокимов',
+		song : "Колодец"
+	},
+	{
+		pack : RU_1980_M_PACK_2,
+		group : 'Вячеслав Добрынин',
+		song : "Синий Туман"
+	},
+	{
+		pack : RU_1980_M_PACK_1,
+		group : 'Игорь Николаев',
+		song : "Старая Мельница"
+	},
+	{
+		pack : RU_1980_M_PACK_1,
+		group : 'Юрий Лоза',
+		song : "Сто часов"
+	},
+	{
+		pack : RU_1980_M_PACK_1,
+		group : 'Юрий Лоза',
+		song : "Баба Люба"
+	},
+	{
+		pack : RU_1980_M_PACK_2,
+		group : 'Крис Кельми',
+		song : "Ночное рандеву"
+	},
+	{
+		pack : RU_1980_M_PACK_2,
+		group : 'Владимир Маркин',
+		song : "Белая Черемуха"
+	},
+	{
+		pack : RU_1980_M_PACK_1,
+		group : 'Юрий Антонов',
+		song : "О тебе и обо мне"
+	},
+	{
+		pack : RU_1980_M_PACK_1,
+		group : 'Игорь Скляр',
+		song : "Старый рояль (ft Ольга Пирагс)"
+	},
+	{
+		pack : RU_1980_M_PACK_2,
+		group : 'Тынис Мяги',
+		song : "Спасите разбитое сердце моё (Детектив)"
+	},
+	{
+		pack : RU_1980_M_PACK_2,
+		group : 'Тынис Мяги',
+		song : "Олимпиада-80"
+	},
+	{
+		pack : RU_1980_M_PACK_1,
+		group : 'Андрей Державин',
+		song : "Катя-Катерина"
+	},
+	{
+		pack : RU_1980_M_PACK_1,
+		group : 'Игорь Саруханов',
+		song : "Дорогие мои старики"
+	},
+	{
+		pack : RU_1980_M_PACK_1,
+		group : 'Игорь Саруханов',
+		song : "Зелёные глаза"
+	},
+	{
+		pack : RU_1980_M_PACK_2,
+		group : 'Виктор Попов',
+		song : "Ты не забывай (ft Твой день)"
+	},
+	{
+		pack : RU_1980_M_PACK_1,
+		group : 'Дмитрий Маликов',
+		song : "До завтра"
+	},
+	{
+		pack : RU_1980_M_PACK_1,
+		group : 'Дмитрий Маликов',
+		song : "Студент"
+	},
+	{
+		pack : RU_1980_M_PACK_1,
+		group : 'Дмитрий Маликов',
+		song : "Брачный кортеж"
+	},
+	{
+		pack : RU_1980_M_PACK_2,
+		group : 'Лев Лещенко',
+		song : "До свидания, Москва (ft Татьяна Анциферова)"
+	},
+	{
+		pack : RU_1980_M_PACK_2,
+		group : 'Лев Лещенко',
+		song : "Где мой дом родной"
+	},
+	{
+		pack : RU_1980_M_PACK_2,
+		group : 'Михаил Муромов',
+		song : "Яблоки на снегу"
+	},
+	{
+		pack : RU_1980_M_PACK_2,
+		group : 'Александр Серов',
+		song : "Мадонна"
+	},
+	{
+		pack : RU_1980_M_PACK_2,
+		group : 'Александр Серов',
+		song : "Круиз (ft Ольга Зарубина)"
+	},
+	{
+		pack : RU_1980_M_PACK_2,
+		group : 'Александр Серов',
+		song : "Междугородный разговор (ft Татьяна Анциферова)"
+	},
+	{
+		pack : RU_1980_M_PACK_2,
+		group : 'Сергей Беликов',
+		song : "Снится мне деревня"
+	},
+	{
+		pack : RU_1980_M_PACK_2,
+		group : 'Сергей Беликов',
+		song : "Радуга"
+	},
+	{
+		pack : RU_1980_M_PACK_2,
+		group : 'Сергей Беликов',
+		song : "Живи родник"
+	},
+	{
+		pack : RU_1980_M_PACK_2,
+		group : 'Вилли Токарев',
+		song : "В шумном балагане"
+	},
+	{
+		pack : RU_1980_M_PACK_2,
+		group : 'Вилли Токарев',
+		song : "Над Гудзоном"
+	},
+	{
+		pack : RU_1980_M_PACK_2,
+		group : 'Вилли Токарев',
+		song : "Небоскребы"
+	},
+	{
+		pack : RU_1980_M_PACK_2,
+		group : 'Вахтанг Кикабидзе',
+		song : "Проводы любви"
+	},
+	{
+		pack : RU_1980_M_PACK_2,
+		group : 'Вахтанг Кикабидзе',
+		song : "Мои года – моё богатство"
+	},
+	{
+		pack : RU_1980_M_PACK_1,
+		group : 'Владимир Пресняков',
+		song : "Белый снег"
+	},
+	{
+		pack : RU_1980_M_PACK_1,
+		group : 'Владимир Пресняков',
+		song : "Зурбаган"
+	},
+	{
+		pack : RU_1980_M_PACK_1,
+		group : 'Алексей Глызин',
+		song : "Зимний сад"
+	},
+	{
+		pack : RU_1980_M_PACK_1,
+		group : 'Николай Гнатюк',
+		song : "Птица счастья"
+	},
+	{
+		pack : RU_1980_M_PACK_1,
+		group : 'Николай Гнатюк',
+		song : "Танец на барабане"
+	},
+	{
+		pack : RU_1980_M_PACK_1,
+		group : 'Валерий Леонтьев',
+		song : "Полет на дельтаплане"
+	},
+	{
+		pack : RU_1980_M_PACK_1,
+		group : 'Валерий Леонтьев',
+		song : "Маргарита"
+	},
+	{
+		pack : RU_1980_M_PACK_1,
+		group : 'Валерий Леонтьев',
+		song : "Зеленый свет"
+	},
+	{
+		pack : RU_1980_M_PACK_2,
+		group : 'Александр Розенбаум',
+		song : "Утинная охота"
+	},
+	{
+		pack : RU_1980_M_PACK_1,
+		group : 'Владимир Высоцкий',
+		song : "Все не так, ребята"
+	},
+	{
+		pack : RU_1980_M_PACK_2,
+		group : 'Алексей Вишня',
+		song : "Танцы на битом стекле"
+	},
+	{
+		pack : RU_1980_M_PACK_2,
+		group : 'Александр Айвазов',
+		song : "Лилии"
+	},
+	{
+		pack : RU_1980_M_PACK_2,
+		group : 'Александр Барыкин',
+		song : "20:00"
+	},
+	{
+		pack : RU_1980_M_PACK_2,
+		group : 'Александр Барыкин',
+		song : "Чудо-остров"
+	}
+];
+
+let ru_1980_m_1 =	ru_1980_m.filter(item => item.pack == 1);
+let ru_1980_m_2 =	ru_1980_m.filter(item => item.pack == 2);
 
 
 let music = [
 	{
-		arr: en_2000_m,
-		lang: 'en',
-		year: '2000',
+		arr: ru_1980_m,
+		lang: 'ru',
+		year: '1980',
 		type: 'm',
 		packs: [
 				{
-					arr: en_2000_m_1,
-					name: 'EN 2000s Male: Pop',
+					arr: ru_1980_m_1,
+					name: 'RU 1980s Male: Easy',
 				},
 				{
-					arr: en_2000_m_2,
-					name: 'EN 2000s Male: Dj',
-				},
-				{
-					arr: en_2000_m_3,
-					name: 'EN 2000s Male: Rap',
+					arr: ru_1980_m_2,
+					name: 'RU 1980s Male: Medium',
 				}
 			]
 	}
@@ -687,15 +1016,15 @@ let generateAudioPath;
 let generateImgPath;
 
 function setup(){
-	lang = 'en';
-	year = '2000';
+	lang = 'ru';
+	year = '1980';
 	artist_type = 'm';
 	back = back_to_packages;
 	modeToggle = toggleArtist;
 	setMedia = setAudio;
 	rightAnswer = rightAnswer_RU;
 	count_time();
-	package_names = en_2000_gr_icon;
+	package_names = ru_1980_m_icon;
 	show_packages(package_names.length);
 	document.body.scrollTop = document.documentElement.scrollTop = 0;
 }
