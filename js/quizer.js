@@ -405,7 +405,8 @@ let ru_1980_m = [
 	{
 		pack : RU_1980_M_PACK_1,
 		group : 'Юрий Антонов',
-		song : "На улице Каштановой"
+		song : "На улице Каштановой",
+		ignore : true
 	},
 	{
 		pack : RU_1980_M_PACK_1,
@@ -431,12 +432,14 @@ let ru_1980_m = [
 	{
 		pack : RU_1980_M_PACK_1,
 		group : 'Юрий Антонов',
-		song : "Анастасия"
+		song : "Анастасия",
+		ignore : true
 	},
 	{
 		pack : RU_1980_M_PACK_1,
 		group : 'Михаил Боярский',
-		song : "Сивка-Бурка"
+		song : "Сивка-Бурка",
+		ignore : true
 	},
 	{
 		pack : RU_1980_M_PACK_1,
@@ -471,7 +474,8 @@ let ru_1980_m = [
 	{
 		pack : RU_1980_M_PACK_2,
 		group : 'Крис Кельми',
-		song : "Ночное рандеву"
+		song : "Ночное рандеву",
+		ignore : true
 	},
 	{
 		pack : RU_1980_M_PACK_2,
@@ -481,7 +485,8 @@ let ru_1980_m = [
 	{
 		pack : RU_1980_M_PACK_1,
 		group : 'Юрий Антонов',
-		song : "О тебе и обо мне"
+		song : "О тебе и обо мне",
+		ignore : true
 	},
 	{
 		pack : RU_1980_M_PACK_1,
@@ -496,7 +501,7 @@ let ru_1980_m = [
 	{
 		pack : RU_1980_M_PACK_2,
 		group : 'Тынис Мяги',
-		song : "Олимпиада-80"
+		song : "Олимпиада 80"
 	},
 	{
 		pack : RU_1980_M_PACK_1,
@@ -516,22 +521,26 @@ let ru_1980_m = [
 	{
 		pack : RU_1980_M_PACK_2,
 		group : 'Виктор Попов',
-		song : "Ты не забывай (ft Твой день)"
+		song : "Ты не забывай (ft Твой день)",
+		ignore : true
 	},
 	{
 		pack : RU_1980_M_PACK_1,
 		group : 'Дмитрий Маликов',
-		song : "До завтра"
+		song : "До завтра",
+		ignore : true
 	},
 	{
 		pack : RU_1980_M_PACK_1,
 		group : 'Дмитрий Маликов',
-		song : "Студент"
+		song : "Студент",
+		ignore : true
 	},
 	{
 		pack : RU_1980_M_PACK_1,
 		group : 'Дмитрий Маликов',
-		song : "Брачный кортеж"
+		song : "Брачный кортеж",
+		ignore : true
 	},
 	{
 		pack : RU_1980_M_PACK_2,
@@ -646,12 +655,13 @@ let ru_1980_m = [
 	{
 		pack : RU_1980_M_PACK_2,
 		group : 'Александр Розенбаум',
-		song : "Утинная охота"
+		song : "Утиная охота"
 	},
 	{
 		pack : RU_1980_M_PACK_1,
 		group : 'Владимир Высоцкий',
-		song : "Все не так, ребята"
+		song : "Все не так, ребята",
+		ignore : true
 	},
 	{
 		pack : RU_1980_M_PACK_2,
