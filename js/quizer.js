@@ -344,11 +344,13 @@ function load(){
 // RU songs
 const ru_1980_m_icon = [
 	'easy',
-	'medium'
+	'medium',
+	'pop'
 ];
 
 const RU_1980_M_PACK_1 = 1;
 const RU_1980_M_PACK_2 = 2;
+const RU_1980_M_PACK_3 = 3;
 
 let ru_1980_m = [
 	{
@@ -411,8 +413,7 @@ let ru_1980_m = [
 	{
 		pack : RU_1980_M_PACK_1,
 		group : 'Игорь Тальков',
-		song : "Чистые пруды",
-		year : 1987
+		song : "Чистые пруды (1987)"
 	},
 	{
 		pack : RU_1980_M_PACK_1,
@@ -425,7 +426,7 @@ let ru_1980_m = [
 		song : "Я не умею танцевать"
 	},
 	{
-		pack : RU_1980_M_PACK_2,
+		pack : RU_1980_M_PACK_3,
 		group : 'Сергей Рогожин',
 		song : "На соседней улице"
 	},
@@ -506,7 +507,8 @@ let ru_1980_m = [
 	{
 		pack : RU_1980_M_PACK_1,
 		group : 'Андрей Державин',
-		song : "Катя-Катерина"
+		song : "Катя-Катерина (1993)",
+		ignore : true
 	},
 	{
 		pack : RU_1980_M_PACK_1,
@@ -545,12 +547,12 @@ let ru_1980_m = [
 	{
 		pack : RU_1980_M_PACK_2,
 		group : 'Лев Лещенко',
-		song : "До свидания, Москва (ft Татьяна Анциферова)"
+		song : "До свидания, Москва (ft Татьяна Анциферова) (1980)"
 	},
 	{
 		pack : RU_1980_M_PACK_2,
 		group : 'Лев Лещенко',
-		song : "Где мой дом родной"
+		song : "Где мой дом родной (1983)"
 	},
 	{
 		pack : RU_1980_M_PACK_2,
@@ -560,12 +562,12 @@ let ru_1980_m = [
 	{
 		pack : RU_1980_M_PACK_2,
 		group : 'Александр Серов',
-		song : "Мадонна"
+		song : "Мадонна (1987)"
 	},
 	{
 		pack : RU_1980_M_PACK_2,
 		group : 'Александр Серов',
-		song : "Круиз (ft Ольга Зарубина)"
+		song : "Круиз (ft Ольга Зарубина) (1981)"
 	},
 	{
 		pack : RU_1980_M_PACK_2,
@@ -615,12 +617,13 @@ let ru_1980_m = [
 	{
 		pack : RU_1980_M_PACK_1,
 		group : 'Владимир Пресняков',
-		song : "Белый снег"
+		song : "Белый снег (1996)",
+		ignore : true
 	},
 	{
 		pack : RU_1980_M_PACK_1,
 		group : 'Владимир Пресняков',
-		song : "Зурбаган"
+		song : "Зурбаган (1986)"
 	},
 	{
 		pack : RU_1980_M_PACK_1,
@@ -664,14 +667,14 @@ let ru_1980_m = [
 		ignore : true
 	},
 	{
-		pack : RU_1980_M_PACK_2,
+		pack : RU_1980_M_PACK_3,
 		group : 'Алексей Вишня',
 		song : "Танцы на битом стекле"
 	},
 	{
 		pack : RU_1980_M_PACK_2,
 		group : 'Александр Айвазов',
-		song : "Лилии"
+		song : "Лилии (1989)"
 	},
 	{
 		pack : RU_1980_M_PACK_2,
@@ -702,7 +705,7 @@ let ru_1980_m = [
 		year : 1988
 	},
 	{
-		pack : RU_1980_M_PACK_2,
+		pack : RU_1980_M_PACK_3,
 		group : 'Яак Йоала',
 		song : "Не забывай",
 		year : 1985
@@ -763,11 +766,87 @@ let ru_1980_m = [
 		pack : RU_1980_M_PACK_2,
 		group : 'Вадим Казаченко',
 		song : "Жёлтые розы (1989)"
+	},
+	{
+		pack : RU_1980_M_PACK_1,
+		group : 'Владимир Пресняков',
+		song : "Острова (1985)"
+	},
+	{
+		pack : RU_1980_M_PACK_3,
+		group : 'Александр Абдулов',
+		song : "Двенадцать Дней (1985)"
+	},
+	{
+		pack : RU_1980_M_PACK_3,
+		group : 'Альберт Асадуллин',
+		song : "Дорога без конца (1987)"
+	},
+	{
+		pack : RU_1980_M_PACK_3,
+		group : 'Анатолий Папанов',
+		song : "Песня Водяного (1980)"
+	},
+	{
+		pack : RU_1980_M_PACK_3,
+		group : 'Булат Окуджава',
+		song : "До свидания, мальчики (1985)"
+	},
+	{
+		pack : RU_1980_M_PACK_3,
+		group : 'Владимир Шурочкин',
+		song : "Калейдоскоп (1989)"
+	},
+	{
+		pack : RU_1980_M_PACK_2,
+		group : 'Дмитрий Харатьян',
+		song : "Не вешать нос (Из т/ф 'Гардемарины, вперёд!') (ft Олег Анофриев) (1987)"
+	},
+	{
+		pack : RU_1980_M_PACK_3,
+		group : 'Евгений Мартынов',
+		song : "Марш-воспоминание (1984)"
+	},
+	{
+		pack : RU_1980_M_PACK_2,
+		group : 'Игорь Иванов',
+		song : "Буду я любить тебя всегда (1981)"
+	},
+	{
+		pack : RU_1980_M_PACK_3,
+		group : 'Ион Суручану',
+		song : "Незабудка (1989)"
+	},
+	{
+		pack : RU_1980_M_PACK_2,
+		group : 'Константин Никольский',
+		song : "В Моей Душе Осадок Зла (1981)"
+	},
+	{
+		pack : RU_1980_M_PACK_2,
+		group : 'Муслим Магомаев',
+		song : "Ноктюрн (1980)"
+	},
+	{
+		pack : RU_1980_M_PACK_3,
+		group : 'Олег Ухналёв',
+		song : "Черемуховый снег (1983)"
+	},
+	{
+		pack : RU_1980_M_PACK_3,
+		group : 'Юрий Визбор',
+		song : "Нам бы выпить перед стартом (1981)"
+	},
+	{
+		pack : RU_1980_M_PACK_3,
+		group : 'Юрий Чернавский',
+		song : "Банановые Острова (1983)"
 	}
 ];
 
 let ru_1980_m_1 =	ru_1980_m.filter(item => item.pack == 1);
 let ru_1980_m_2 =	ru_1980_m.filter(item => item.pack == 2);
+let ru_1980_m_3 =	ru_1980_m.filter(item => item.pack == 3);
 
 
 let music = [
@@ -784,6 +863,10 @@ let music = [
 				{
 					arr: ru_1980_m_2,
 					name: 'RU 1980s Male: Medium',
+				},
+				{
+					arr: ru_1980_m_3,
+					name: 'RU 1980s Male: One Hit Wonders',
 				}
 			]
 	}
@@ -797,6 +880,7 @@ function map_songs(){
 	$('#mirror').hide();
 	$('#map').hide();
 	$('#package_content').hide();
+	$('#sec_15_hist').show();
 	$('#mapping_content').show();
 	toggleLearn();
 	for(var j=0; j < music.length; j++){
@@ -1135,6 +1219,15 @@ function back_to_browser(){
 function back_to_current_pack(){
 	back = back_to_browser;
 	$('#mapping_content').hide();
+	$('#sec_15_hist').hide();
+	song_stop();
 	$('#map').show();
 	package_num(pack_num);
+}
+
+function song_stop() {
+	if(audio){
+		audio.pause();
+		audio = null;
+	}
 }
