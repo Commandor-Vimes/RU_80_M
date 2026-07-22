@@ -632,7 +632,8 @@ let ru_1980_m = [
 	{
 		pack : RU_1980_M_PACK_1,
 		group : 'Алексей Глызин',
-		song : "Зимний сад"
+		song : "Зимний сад",
+		ignore : true
 	},
 	{
 		pack : RU_1980_M_PACK_1,
